@@ -18,6 +18,7 @@ public class TeacherHelper {
 			System.out.println("1 - Calcular salário");
 			System.out.println("2 - Calcular média de notas dos alunos");
 			System.out.println("3 - Exibir a motivação do dia!");
+			System.out.println("4 - Sair do Sistema");
 			
 			opcao = leitor.nextInt();
 			
@@ -53,6 +54,7 @@ public class TeacherHelper {
 					notaAluno = leitor.nextDouble();
 					mediaAlunos = mediaAlunos + notaAluno;
 					i = i + 1;
+					
 				}
 				mediaAlunos = mediaAlunos / qtdeAlunos;
 				System.out.println("A média de notas dos alunos dessa turma é " + mediaAlunos);
@@ -61,6 +63,9 @@ public class TeacherHelper {
 			case 3:
 				
 				switch(gerador.nextInt(7)) {
+				case 0:
+					System.out.println("Faça ou nao faça, tentativa não há");
+					break;				
 				case 1:
 					System.out.println("Você é um professor incrível!");
 					break;
